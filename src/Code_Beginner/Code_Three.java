@@ -2,6 +2,10 @@ package Code_Beginner;
 
 import java.util.Scanner;
 
+/**
+ * @author Francisco junior
+ */
+
 public class Code_Three {
     public static void main(String[] args) {
         //Using class "Scanner" for received data keyboard
