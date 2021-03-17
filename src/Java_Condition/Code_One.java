@@ -25,15 +25,13 @@ public class Code_One {
         numberTwo = input.nextInt();
 
         //Creating condition for bigger number
-        if(numberOne > numberBigger){
+        if (numberBigger > numberOne) {
             numberBigger = numberOne;
-            System.out.println("Bigger number is number One: "+numberBigger);
-        } else if (numberTwo > numberBigger) {
+            System.out.println("Bigger number is number One: " + numberBigger);
+        } else if (numberBigger > numberTwo) {
             numberBigger = numberTwo;
-            System.out.println("Bigger number is number Two: "+numberTwo);
+            System.out.println("Bigger number is number Two: " + numberBigger);
         }
-
-
 
 
     }
