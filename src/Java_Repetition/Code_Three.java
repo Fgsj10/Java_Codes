@@ -18,6 +18,7 @@ public class Code_Three {
         double salary;
         String gender;
         String converterGender;
+        String converterStateCivil;
         String stateCivil;
 
         //Inputing data of user;
@@ -25,7 +26,7 @@ public class Code_Three {
         //Receiving size of name
         System.out.println("Enter with you name: ");
         name = input.next();
-        while (name.length() < 3){
+        while (name.length() < 3) {
             System.out.println("Size name is invalid, please again");
             System.out.println("Enter with you name again: ");
             name = input.next();
@@ -34,7 +35,7 @@ public class Code_Three {
         System.out.println("****************************************");
         System.out.println("Enter with you age: ");
         age = input.nextInt();
-        while (age < 0 || age > 150){
+        while (age < 0 || age > 150) {
             System.out.println("Age invalid, try again");
             System.out.println("Enter you age: ");
             age = input.nextInt();
@@ -43,7 +44,7 @@ public class Code_Three {
         System.out.println("****************************************");
         System.out.println("Enter you salary: ");
         salary = input.nextDouble();
-        while (salary < 0){
+        while (salary < 0) {
             System.out.println("Enter you salary please: ");
             System.out.println("Your salary is: ");
             salary = input.nextDouble();
@@ -53,11 +54,23 @@ public class Code_Three {
         System.out.println("Enter you gender: ");
         gender = input.next();
         converterGender = gender.toLowerCase();
-        while (converterGender != "f" && converterGender != "m"){
+        while (converterGender == "f" && converterGender == "m") {
             System.out.println("Gender invalid");
             System.out.println("User, enter with you gender: ");
             gender = input.next();
             converterGender = gender.toLowerCase();
+        }
+        //-----------------------------------------------------------
+        System.out.println("****************************************");
+        System.out.println("Enter with your State Civil: ");
+        stateCivil = input.next();
+        converterStateCivil = stateCivil;
+        while (converterStateCivil != "s" || converterStateCivil != "c" || converterStateCivil != "v" || converterStateCivil != "d") {
+            System.out.println("State Civil invalid, trg again!");
+            System.out.println("Enter with your State Civil: ");
+            stateCivil = input.next();
+            converterGender = stateCivil;
+
         }
 
 
